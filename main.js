@@ -12,10 +12,10 @@ btn.addEventListener("click", function() {
 function toggleImage() {
     var img = document.getElementById('dark-mode');
 
-    if (img.src.match("imgs/icon/darkmode.png")) {
-        img.src = "imgs/icon/lightmode.png";
+    if (img.src.match("darkmode.png")) {
+        img.src = "lightmode.png";
     } else {
-        img.src = "imgs/icon/darkmode.png";
+        img.src = "darkmode.png";
     }
 }
 
