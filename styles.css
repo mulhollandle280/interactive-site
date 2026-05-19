@@ -121,7 +121,7 @@
     .banner{
         grid-area:banner;
         text-align: center;
-        background-image: url(imgs/pic/ella.png);
+        background-image: url(/ella.png);
         background-size:100%;
         background-position-y: 790px;
     }
@@ -135,7 +135,7 @@
     .bannerGal{
         grid-area:banner;
         text-align: center;
-        background-image: url(imgs/pic/spooky.png);
+        background-image: url(/spooky.png);
         background-size:cover;
         background-position-y: 850px;
     }
