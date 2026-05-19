@@ -121,13 +121,14 @@
     .banner{
         grid-area:banner;
         text-align: center;
-        background-image: url(ella.png);
+        background-image: url(/ella.png);
         background-size:100%;
         background-position-y: 790px;
     }
 
     .banner p{
         font-size: 300%;
+        text-align: center;
         font-family: var(--fancyfont);
         color: #ffffff;
     }
@@ -135,7 +136,7 @@
     .bannerGal{
         grid-area:banner;
         text-align: center;
-        background-image: url(spooky.png);
+        background-image: url(/spooky.png);
         background-size:cover;
         background-position-y: 850px;
     }
@@ -312,6 +313,11 @@
             padding-right: 5%;
             text-align: left;
             font-size: 100%;
+        }
+
+        #bodyID .banner p{
+            text-align: center;
+            font-size: 300%;
         }
 
         #GalID{
