@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="bodyID">
+        <header>
+            <h1>Elle Belle Art</h1>
+            <img id="dark-mode" src="imgs/icon/darkmode.png" onclick="toggleImage()" height="25" alt="darkmode">
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="other.html" class="nav-link">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="banner"><p>Home</p></div>
+        <main>
+            <h2>Who is Ella?</h2>
+            <p>Elle Belle Art, Ella Slater, is a young female artist who has recently graduated highschool from Grand Traverse Academy. She has taken many art classes in her life, such as a graphic design class at her highschool, as well as taking a summer camp class for animation. She is pursuing her dream and furthering her education at Interlochen Arts Academy. Like most artist she dreams of making her art her career. That is unless AI takes over the art industry, which she is very against. She has a love for. Ella is a hard worker and has, in my opinion mastered digital and traditional art. She has taken a film class within the North West Education Services Career Tech Center, she has written, directed, filmed, edited, acted, and produced short films for two years because of said class.</p>
+        </main>
+
+        <div class="side">
+            <div class="tilt-container" id="tiltContainer">
+                <a href="imgs/pic/spooky.png"><img src="imgs/pic/spookyth.png" alt="ellatest" id="tiltimage"></a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Congrats on graduating Ella, I'm so proud of you!</p>
+            <p>from Leo.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle');
+        toggleButton.addEventListener('click', () => {
+        // Toggle class and save state
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+        });
+
+        window.addEventListener('load', () => {
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+        });
+    </script>
+</body>
+</html>
